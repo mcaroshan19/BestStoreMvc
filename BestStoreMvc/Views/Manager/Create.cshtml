@@ -1,0 +1,264 @@
+﻿@model BestStoreMvc.Models.ManagerDto
+
+<!--<div class="row b">
+    <div class="col-md-7 mx-auto border-rounded p-3">
+        <h2 class="text-center mb-5">New Form</h2>
+
+        <form method="post" enctype="multipart/form-data">
+            
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Name</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Name" />
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+            </div>
+
+          
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Product Category</label>
+                <div class="col-sm-8">
+                    <select class="form-select" asp-for="Category">
+                        <option value="Other">Other</option>
+                        <option value="Computer">Computer</option>
+                        <option value="Camera">Camera</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                </div>
+            </div>
+
+           
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Freshness</label>
+                <div class="col">
+                    <div class="form-check form-check-inline p-2">
+                        <input class="form-check-input" type="radio" asp-for="Freshness" value="Brand New">
+                        <label class="form-check-label">Brand New</label>
+                    </div>
+                    <div class="form-check form-check-inline p-2">
+                        <input class="form-check-input" type="radio" asp-for="Freshness" value="Refurbished">
+                        <label class="form-check-label">Refurbished</label>
+                    </div>
+                    <div class="form-check form-check-inline p-2">
+                        <input class="form-check-input" type="radio" asp-for="Freshness" value="Secondhand">
+                        <label class="form-check-label">Secondhand</label>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Image of Product</label>
+                <div class="col-sm-8">
+                    <input type="file" class="form-control" asp-for="FileName" />
+                    <span class="text-danger" asp-validation-for="FileName"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Add Description</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" asp-for="Description" rows="3"></textarea>
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Comments</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" asp-for="Comments" rows="3"></textarea>
+                    <span class="text-danger" asp-validation-for="Comments"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3 align-items-center">
+                <div class="col-auto">
+                    <label class="col-form-label p-2">Manager Email</label>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-sm" asp-for="Email" />
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+
+                <div class="col-auto">
+                    <label class="col-form-label p-2">Manager Phone No</label>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-sm" asp-for="PhoneNumber" />
+                    <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+                </div>
+            </div>
+
+
+
+
+
+         
+
+
+            <div class="row bt-3">
+                <div class="col-sm-4 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a class="btn btn-outline-primary" asp-controller="Manager" asp-action="Index" role="button">Cancel</a>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
+-->
+
+
+
+
+
+                 
+
+<div class="container mt-4">
+    <!-- Form Wrapper with Border and Rounded Corners -->
+    <div class="row">
+        <div class="col-md-7 mx-auto border border-primary rounded p-4">
+            <h2 class="text-center mb-5">New Form</h2>
+
+            <form method="post" enctype="multipart/form-data">
+                <!-- Name Field -->
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label">Name</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" asp-for="Name" />
+                        <span class="text-danger" asp-validation-for="Name"></span>
+                    </div>
+                </div>
+
+                <!-- Product Category Field -->
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label">Product Category</label>
+                    <div class="col-sm-8">
+                        <select class="form-select" asp-for="Category">
+                            <option value="Other">Other</option>
+                            <option value="Computer">Computer</option>
+                            <option value="Camera">Camera</option>
+                            <option value="Phone">Phone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Freshness Field -->
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label">Freshness</label>
+                    <div class="col">
+                        <div class="form-check form-check-inline p-2">
+                            <input class="form-check-input" type="radio" asp-for="Freshness" value="Brand New">
+                            <label class="form-check-label">Brand New</label>
+                        </div>
+                        <div class="form-check form-check-inline p-2">
+                            <input class="form-check-input" type="radio" asp-for="Freshness" value="Refurbished">
+                            <label class="form-check-label">Refurbished</label>
+                        </div>
+                        <div class="form-check form-check-inline p-2">
+                            <input class="form-check-input" type="radio" asp-for="Freshness" value="Secondhand">
+                            <label class="form-check-label">Secondhand</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image of Product Field -->
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label">Image of Product</label>
+                    <div class="col-sm-8">
+                        <input type="file" class="form-control" asp-for="FileName" />
+                        <span class="text-danger" asp-validation-for="FileName"></span>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-4 col-form-label">Price</label>
+                    <div class="col-sm-8">
+                        <input id="price-input" asp-for="Price" class="form-control" placeholder="Enter amount in INR" />
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-4 col-form-label">Converted Price in USD</label>
+                    <div class="col-sm-8">
+                        <input id="currency-input" class="form-control" placeholder="Converted amount in USD" readonly />
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Description Field -->
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label">Add Description</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" asp-for="Description" rows="4"></textarea>
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+                </div>
+
+                <!-- Comments Field -->
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label">Comments</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" asp-for="Comments" rows="4"></textarea>
+                        <span class="text-danger" asp-validation-for="Comments"></span>
+                    </div>
+                </div>
+
+                <!-- Manager Email and Phone Fields -->
+                <div class="row mb-3 align-items-center">
+                    <div class="col-auto">
+                        <label class="col-form-label p-2">Manager Email</label>
+                    </div>
+                    <div class="col">
+                        <input class="form-control form-control-sm" asp-for="Email" />
+                        <span class="text-danger" asp-validation-for="Email"></span>
+                    </div>
+                    <div class="col-auto">
+                        <label class="col-form-label p-2">Manager PhoneNo</label>
+                    </div>
+                    <div class="col">
+                        <input class="form-control form-control-sm" asp-for="PhoneNumber" />
+                        <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+                    </div>
+                </div>
+
+                <!-- Submit and Cancel Buttons -->
+                <div class="row mb-3">
+                    <div class="col-sm-4 d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a class="btn btn-outline-primary" asp-controller="Manager" asp-action="Index" role="button">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("price-input").addEventListener("input", function() {
+        const inrValue = parseFloat(this.value);
+        const usdField = document.getElementById("currency-input");
+
+        
+        const conversionRate = 83; // Example: 1 USD = 83 INR
+
+        if (!isNaN(inrValue)) {
+         
+            const usdValue = (inrValue / conversionRate).toFixed(2);
+            usdField.value = `$${usdValue}`;
+        } else {
+            // Clear the USD field if input is invalid
+            usdField.value = "";
+        }
+    });
+
+
+
+</script>
